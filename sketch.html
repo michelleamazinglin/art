@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Michelle's Portfolio</title>
+	<title>Michelle's Sketch</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords"
@@ -56,6 +56,8 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Modal -->
+	<link rel="stylesheet" href="css/modal.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -107,124 +109,449 @@
 
 		</aside>
 
+		<!-- The Modal -->
+		<div id="modal01" class="modal1" onclick="this.style.display='none'">
+			<img class="modal-content1" id="img01">
+			<p id="modal-text" class="modal-text"></p>
+		</div>
+
 		<div id="fh5co-main">
 			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Portfolio</h2>
+				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Sketch</h2>
 				<div class="row row-bottom-padded-md">
+
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-1.jpg);">
+						<!-- add id="myBtn" as a trigger to modal -->
+						<a id="images/sketch/Animal_Anatomy/IMG_1295_edited.png" 
+							onclick="onClick(this)"
+							class="work image-popup"
+							text="Animal Anatomy, 2018"
+							style="background-image: url(images/sketch/Animal_Anatomy/IMG_1295_edited.png); background-size: auto 100%;">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>Animal Anatomy</h3>
+								<span>2018</span>
+							</div>
+	
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a onclick="onClick(this)" 
+							id="images/sketch/Animal_Anatomy/IMG_1293.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Animal_Anatomy/IMG_1293.png); background-size: auto 100%;">
+							<div class="desc">
+								<h3>2018</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a  
+							onclick="onClick(this)" 
+							id="images/sketch/Animal_Anatomy/IMG_1291.png"
+							class="work image-popup"
+							style="background-image: url(images/sketch/Animal_Anatomy/IMG_1291.png); background-size: 100% auto;">
+							<div class="desc">
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-2.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Animal_Anatomy/IMG_1290.png"
+							class="work image-popup"
+							style="background-image: url(images/sketch/Animal_Anatomy/IMG_1290.png); background-size: 100% auto;">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-3.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Animal_Anatomy/IMG_1289.png"
+							class="work image-popup"
+							style="background-image: url(images/sketch/Animal_Anatomy/IMG_1289.png); background-size: auto 100%">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-4.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Animal_Anatomy/IMG_1287.jpg.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Animal_Anatomy/IMG_1287.jpg.png); background-size: 100% auto">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-5.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1292.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1292.png); background-size: 100% auto">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-6.jpg);">
+						<a  
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/anatomy_green.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/anatomy_green.png); background-size: 100% auto">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-1.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1299.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1299.png); background-size: 100% auto">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-2.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1269.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1269.png); background-size: auto 100%">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-1.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1270.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1270.png); background-size: auto 100%">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-2.jpg);">
+						<a 	
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1271.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1271.png); background-size: 100% auto">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Brading</span>
+								<h3>2018</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1272.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1272.png); background-size: 100% auto">
+							<div class="desc">
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-3.jpg);">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1276.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1276.png); background-size: auto 100%">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>2018</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-4.jpg);">
+						<a
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1278.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1278.png); background-size: auto 100%">
 							<div class="desc">
-								<h3>Project Name</h3>
-								<span>Illustration</span>
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1279.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1279.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1282.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1282.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1281.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1281.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 	
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1275.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1275.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1283.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1283.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1284.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1284.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 	onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1285.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1285.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a  onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1296.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1296.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a  onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1297.png"  
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1297.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a  onclick="onClick(this)" 
+							id="images/sketch/Human_Anatomy/IMG_1298.png" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/Human_Anatomy/IMG_1298.png); background-size: auto 100%">
+							<div class="desc">
+								<h3>2017</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/stilllife2.jpg" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/stilllife2.jpg); background-size: 100% auto">
+							<div class="desc">
+								<h3>2016</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/bear.jpg" 
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/bear.jpg); background-size: auto 100%;">
+							<div class="desc">
+								<h3>2016</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/bike.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/bike.jpg); background-size: auto 100%;">
+							<div class="desc">
+								<h3>2016</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/city_black_white.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/city_black_white.jpg); background-size: 100% auto;">
+							<div class="desc">
+								<h3>2016</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/kitchen.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/kitchen.jpg); background-size: 100% auto;">
+							<div class="desc">
+								<h3>2016</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/light.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/light.jpg); background-size: 100% auto;">
+							<div class="desc">
+								<h3>2015</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/nangua.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/nangua.jpg); background-size: auto 100%;">
+							<div class="desc">
+								<h3>2015</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/still_life1.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/still_life1.jpg); background-size: 100% auto;">
+							<div class="desc">
+								<h3>2015</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/color_michelle.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/color_michelle.jpg); background-size: auto 100%;">
+							<div class="desc">
+								<h3>2015</h3>
+								<span></span>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 	
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/p.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/p.jpg); background-size: auto 100%;">
+							<div class="desc">
+								<h3>2015</h3>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+						<a 
+							onclick="onClick(this)" 
+							id="images/sketch/High_School/abstract.jpg"
+							class="work image-popup"
+							style="background-image: url(images/sketch/High_School/abstract.jpg); background-size: auto 100%;">
+							<div class="desc">
+								<h3>2014</h3>
+								<span></span>
 							</div>
 						</a>
 					</div>
 				</div>
 			</div>
 
-			<div class="fh5co-narrow-content">
-				<div class="row">
-					<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-						<h1 class="fh5co-heading-colored">Get in touch</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-						<p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics,
-							a large language ocean.</p>
-						<p><a href="#" class="btn btn-primary">Learn More</a></p>
-					</div>
-
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -238,6 +565,8 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- modal -->
+	<script src="js/modal.js"></script>
 
 
 	<!-- MAIN JS -->
