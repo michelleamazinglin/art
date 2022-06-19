@@ -4,7 +4,4 @@ function onClick(element) {
         document.getElementById("modal01").style.display = "block";
         document.getElementById("modal-text").textContent = element.text
     }
-
-    
-
 }
